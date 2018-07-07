@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <title>MH Dhaaba</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <!-- <%= csrf_meta_tags %> -->
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css">
+       <script src="//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script> -->
+    <!-- Custom styles for this template -->
+    <link href="assets/agency.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/welcome.scss">
+    <link href="assets/stylish-portfolio.css" rel="stylesheet">
+    <script src="assets/parallaxScrolling-1.0.min.js"></script>
+    <link href="assets/style.css" rel="stylesheet" type="text/css">
+
+
+
+  </head>
+
+  <body id="page-top">
+
+
+        <!-- Navigation -->
+         <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+              <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">MH Dhaaba</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                  Menu
+                  <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                  <ul class="navbar-nav text-uppercase ml-auto">
+                    <li class="nav-item <%= 'active' if current_page?(root_path) %>">
+                      <a class="nav-link" href="<%= root_path %>">Home <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item <%= 'active' if current_page?(services_path) %>">
+                      <%= link_to"Services", services_path, class: 'nav-link js-scroll-trigger' %>
+                   </li>
+
+                    <li class="nav-item <%= 'active' if current_page?(menu_path) %>">
+                       <%= link_to"Menu", menu_path, class: 'nav-link js-scroll-trigger' %>
+                    </li>
+                    <li class="nav-item <%= 'active' if current_page?(about_path) %>">
+                      <%= link_to"About", about_path, class: 'nav-link js-scroll-trigger'%>
+                    </li>
+                    <li class="nav-item <%= 'active' if current_page?(contact_path) %>">
+                       <%= link_to"Contact", contact_path, class: 'nav-link js-scroll-trigger' %>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="assets/jqBootstrapValidation.js"></script>
+    <script src="assets/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="assets/agency.min.js"></script>
+
+    <script src="assets/application.js"></script>
+
+<script src="assets/stylish-portfolio.min.js"></script>
+<script src="assets/parallax.js"></script>
+
+<!-- <form action="assets/contact_me.php" method="post"> -->
+
+
+
+
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script> -->
+
+<%= yield %>
+
+</body>
+
+</html>

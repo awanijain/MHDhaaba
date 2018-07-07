@@ -1,0 +1,93 @@
+
+.cardcontainer {
+  border: 0;
+  float: left;
+  position: relative;
+}
+
+.cardcontainer1 {
+  border: 0;
+  float: right;
+  position: relative;
+}
+
+.cornerimage {
+  border: 0;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  height: 50px;
+  width: 25px;
+ }
+
+ .cornerimage1 {
+   border: 0;
+   position: absolute;
+   top: 60px;
+   left: 0;
+   height: 50px;
+   width: 25px;
+  }
+
+.cardcontainer{
+    height: 220px;
+    width: 285px;
+    position:relative;
+    transition: all 1s;
+    overflow: hidden;
+  }
+
+  .cardcontainer1{
+      height: 220px;
+      width: 285px;
+      position:relative;
+      transition: all 1s;
+      overflow: hidden;
+    }
+
+.galleryImg{
+    height:230px;
+    width:285px;
+    transform-origin: 50% 50%;
+    transition: transform 1s linear;
+  }
+
+   .galleryImg:hover{
+    transform: scale(1.5) rotate(15deg);
+  }
+
+
+  .imgContainer {
+    height: 220px;
+    width: 285px;
+    position: relative;
+    text-align: center;
+    color: #000;
+  }
+
+  .content-right {
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+#banner {
+  margin-top: 300px;
+  width: 100%;
+  height: 1000px;
+  background-size: cover;
+  transition: background-position 0.05s linear;
+}
+
+#video-bg-elem{
+  box-sizing: border-box;
+  float: left;
+
+  object-fit: fill;
+  width:100%;
+  padding-top: 65px;
+  padding-bottom: 100px;
+  height: 600px;
+}
