@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   get 'contact' => 'home#contact'
 
-  get 'contact_me' => 'mailers#contact_me'
+  get 'new' => 'home#new'
 
   get 'about' => 'home#about'
 
@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   root 'welcome#new'
   root 'welcome#create'
   resources :contacts, only: [:new, :create]
+
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
