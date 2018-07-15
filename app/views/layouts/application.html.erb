@@ -16,10 +16,9 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -33,6 +32,7 @@
     <link href="assets/stylish-portfolio.css" rel="stylesheet">
     <script src="assets/parallaxScrolling-1.0.min.js"></script>
     <link href="assets/style.css" rel="stylesheet" type="text/css">
+
 
 
 
@@ -68,9 +68,7 @@
                     <li class="nav-item <%= 'active' if current_page?(contact_path) %>">
                        <%= link_to"Contact", contact_path, class: 'nav-link js-scroll-trigger' %>
                     </li>
-                    <li class="nav-item <%= 'active' if current_page?(new_path) %>">
-                       <%= link_to"Contacts", new_path, class: 'nav-link js-scroll-trigger' %>
-                    </li>
+
                   </ul>
                 </div>
               </div>
@@ -79,41 +77,23 @@
 
 
 
-
-
-
-
-
-
-
-
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="vendor/jquery/jquery.min.js"></script> -->
+    <!-- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
 
     <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Contact form JavaScript -->
-    <script src="assets/jqBootstrapValidation.js"></script>
-    <script src="assets/contact_me.js"></script>
+    <!-- <script src="assets/jqBootstrapValidation.js"></script> -->
+    <!-- <script src="assets/contact_me.js"></script> -->
 
     <!-- Custom scripts for this template -->
     <script src="assets/agency.min.js"></script>
 
-    <script src="assets/application.js"></script>
 
 <script src="assets/stylish-portfolio.min.js"></script>
 <script src="assets/parallax.js"></script>
 
-<!-- <form action="assets/contact_me.php" method="post"> -->
-
-
-
-
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
-<!-- <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script> -->
 
 <%= yield %>
 

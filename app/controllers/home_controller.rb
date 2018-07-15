@@ -12,7 +12,4 @@ class HomeController < ApplicationController
   def menu
   end
 
-  def new
-    @contact = Contact.new
-  end
 end
