@@ -25,16 +25,16 @@
     line-height: 1.42857143;
     background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    // border-radius: 4px;
     -webkit-transition: border .2s ease-in-out;
     -o-transition: border .2s ease-in-out;
     transition: border .2s ease-in-out;
 }
 
-.img-fluid a>img, .img-fluid>img {
-    margin-right: auto;
-    margin-left: auto;
-}
+// .img-fluid a>img, .img-fluid>img {
+//     margin-right: auto;
+//     margin-left: auto;
+// }
 
 
 .cardcontainer {
@@ -68,24 +68,24 @@
   }
 
 .cardcontainer{
-    height: 200px;
-    width: 250px;
+    height: 250px;
+    width: 270px;
     position:relative;
     transition: all 1s;
     overflow: hidden;
   }
 
   .cardcontainer1{
-      height: 200px;
-      width: 250px;
+      height: 250px;
+      width: 270px;
       position:relative;
       transition: all 1s;
       overflow: hidden;
     }
 
 .galleryImg{
-    height:200px;
-    width:250px;
+    height:250px;
+    width:270px;
     transform-origin: 50% 50%;
     transition: transform 1s linear;
   }
@@ -96,8 +96,8 @@
 
 
   .imgContainer {
-    height: 200px;
-    width: 250px;
+    height: 250px;
+    width: 270px;
     position: relative;
     text-align: center;
     color: #000;
