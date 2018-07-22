@@ -1,3 +1,41 @@
+.carousel-control-prev {
+    background-image: -webkit-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+    background-image: -o-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.0001)));
+    background-image: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+    background-repeat: repeat-x;
+}
+
+.carousel-control-next {
+    right: 0;
+    left: auto;
+    background-image: -webkit-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+    background-image: -o-linear-gradient(left,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.0001)),to(rgba(0,0,0,.5)));
+    background-image: linear-gradient(to right,rgba(0,0,0,.0001) 0,rgba(0,0,0,.5) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+    background-repeat: repeat-x;
+}
+
+.img-fluid {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+
+.img-fluid a>img, .img-fluid>img {
+    margin-right: auto;
+    margin-left: auto;
+}
+
 
 .cardcontainer {
   border: 0;
@@ -30,24 +68,24 @@
   }
 
 .cardcontainer{
-    height: 220px;
-    width: 285px;
+    height: 200px;
+    width: 250px;
     position:relative;
     transition: all 1s;
     overflow: hidden;
   }
 
   .cardcontainer1{
-      height: 220px;
-      width: 285px;
+      height: 200px;
+      width: 250px;
       position:relative;
       transition: all 1s;
       overflow: hidden;
     }
 
 .galleryImg{
-    height:230px;
-    width:285px;
+    height:200px;
+    width:250px;
     transform-origin: 50% 50%;
     transition: transform 1s linear;
   }
@@ -58,8 +96,8 @@
 
 
   .imgContainer {
-    height: 220px;
-    width: 285px;
+    height: 200px;
+    width: 250px;
     position: relative;
     text-align: center;
     color: #000;
@@ -91,3 +129,90 @@
   padding-bottom: 100px;
   height: 600px;
 }
+
+#blog {
+    padding-top: 75px;
+    padding-bottom: 100px;
+    background: url(../assets/parallax/blur1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+
+
+
+
+
+#blog .block ul {
+    padding-bottom: 30px;
+}
+
+#blog .block ul {
+    padding-top: 40px;
+}
+
+
+#blog .block ul li {
+    float: none;
+    width: 100%;
+    height: 100%;
+}
+#blog .block ul li {
+    overflow: hidden;
+    width: 50%;
+    float: left;
+    background: #fff;
+    text-align: center;
+    color: #959595;
+    transform: 1s;
+}
+
+
+#blog .block ul li .content-right {
+    float: none;
+    width: 100%;
+    padding: 20px 35px;
+}
+#blog .block ul li .content-right {
+    padding: 40px 35px 23px;
+    font-size: 16px;
+    line-height: 26px;
+    float: right;
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+#blog .block ul li .content-right:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    background: #fff;
+    transform: rotate(45deg);
+    margin-left: -15px;
+}
+
+#blog .block ul li .content-left:after {
+    content: "";
+    position: absolute;
+    right: -15px;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    margin-top: 0px;
+    background: #fff;
+    transform: rotate(45deg);
+}
+//
+// @media only screen and (max-width: 991px) and (min-width: 768px)
+// #blog .block ul li .blog-img img {
+//     width: 100%;
+// }
